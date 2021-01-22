@@ -395,10 +395,10 @@ export default {
 
                     // Determine if the inputted tag exists in the typeagedTags
                     // array
-                    let newTag = {
-                        key: '',
-                        value: text,
-                    };
+                    let newTag = { };
+
+                    newTag[this.idField] = '';
+                    newTag[this.textField] = text;
 
                     const searchQuery = this.escapeRegExp(
                         this.caseSensitiveTags
